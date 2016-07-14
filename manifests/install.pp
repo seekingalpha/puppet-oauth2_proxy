@@ -42,7 +42,7 @@ class oauth2_proxy::install {
     mode   => '0755',
   }
 
-  file { '/usr/lib/systemd/system/oauth2_proxy@.service':
+  file { '/etc/systemd/system/oauth2_proxy@.service':
     ensure  => file,
     owner   => 'root',
     group   => 'root',
